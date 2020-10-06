@@ -1,7 +1,122 @@
-.header {
+@import url(https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap);
+* {
+  padding: 0;
+  margin: 0;
+  font-family: 'PT Sans', sans-serif; }
+
+body {
+  min-width: 320px; }
+
+.header__top-contacts {
+  background-color: #F5F3F3;
+  display: flex;
+  justify-content: center;
+  padding: 10px; }
+
+.header__socials {
+  display: flex; }
+
+.socials__item {
+  width: 37px;
+  height: 37px;
+  background-color: #103D7B;
+  color: #ffffff;
+  margin: 0 10px;
+  cursor: pointer;
+  background-position: center;
+  background-repeat: no-repeat; }
+
+.socials__item--vk {
+  background-image: url(./static/icon-vk.svg); }
+
+.socials__item--ok {
+  background-image: url(./static/icon-ok.svg); }
+
+.socials__item--insta {
+  background-image: url(./static/icon-insta.svg); }
+
+.work-info {
+  display: none; }
+
+.header__main-contacts {
   display: flex;
   flex-direction: column;
+  align-items: center;
+  padding: 30px; }
+
+.header__company-info {
+  margin-top: 30px; }
+
+.company-info {
+  text-align: center;
+  font-size: 18px; }
+
+.company-info__title {
+  font-size: 20px; }
+
+.company-info__list {
+  list-style: none; }
+
+.header__phones {
+  list-style: none;
+  padding: 15px 0 15px 40px;
+  margin-top: 30px;
+  position: relative;
+  font-size: 18px; }
+
+.header__phone {
+  margin: 5px 0; }
+
+.header__phone-link {
+  color: #000000;
+  text-decoration: none; }
+
+.header__phones:before {
+  display: block;
+  content: "";
+  width: 31px;
+  height: 70px;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  margin-top: -35px;
+  background-image: url(./static/icon-phone.svg);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat; }
+
+.header__address {
+  padding: 15px 0 15px 40px;
+  margin-top: 30px;
+  position: relative;
+  font-size: 18px;
+  width: 250px; }
+
+.header__address:before {
+  display: block;
+  content: "";
+  width: 31px;
+  height: 70px;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  margin-top: -35px;
+  background-image: url(./static/icon-map.svg);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat; }
+
+.main {
+  padding: 20px; }
+
+.main__title {
+  font-size: 36px;
   text-align: center; }
+
+.main__text {
+  font-size: 18px;
+  text-align: justify;
+  margin-top: 20px; }
 
 
 /*# sourceMappingURL=style.css.map*/
